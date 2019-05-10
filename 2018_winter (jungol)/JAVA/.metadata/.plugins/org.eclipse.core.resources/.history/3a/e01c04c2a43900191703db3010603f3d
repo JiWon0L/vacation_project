@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+	static int n, k = 0;
+	static int[] array;
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		n = scan.nextInt();
+		array = new int[n];
+		for (int i = 0; i < n; i++) {
+			array[i] = 1;
+		}
+		funtion(k);
+	}
+
+	public static void funtion(int k) {
+		for (int i = 0; i < 6; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(array[j] + " ");
+			}
+			array[n - 1]++;
+			System.out.println();
+		}
+		array[n - 1]++;
+	}
+}

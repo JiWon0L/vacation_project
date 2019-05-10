@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+	static int n;
+	static int[] array;
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		n = scan.nextInt();
+		array = new int[n];
+		for (int i = 0; i < n; i++) {
+			array[i] = 1;
+		}
+		funtion();
+	}
+
+	public static void funtion() {
+		for(int i = 0 ; i < n ; i++) {
+			System.out.print(array[i] + " ");
+		}
+	}
+}
